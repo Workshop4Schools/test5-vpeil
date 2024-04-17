@@ -1,0 +1,47 @@
+site_name: your lib name
+site_url: https://user.github.io/repo-name/
+repo_url: https://github.com/user/repo
+repo_name: user/repo_name
+nav:
+  - Get started:
+    - What is {my-lib-name}?: index.md
+    - Installation: installation.md
+    - Terminology: terminology.md
+    - Usage: usage.md
+
+  - API Documentation:
+    
+  - Feedback: feedback.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+- mkdocstrings
+- search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
